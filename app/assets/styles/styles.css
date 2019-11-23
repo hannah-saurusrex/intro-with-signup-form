@@ -1,6 +1,6 @@
 :root {
     /* primary colors */
-    --red: hsl(0, 100%, 74%);
+    --red: hsla(0, 100%, 74%, 0.7);
     --green: hsl(154, 59%, 51%);
     /* accent colors */
     --blue: hsl(248, 32%, 49%);
@@ -16,6 +16,7 @@ body {
     max-width: 1440px;
     padding-top: 15%;
     width: 80%;
+    background: url(/app/assets/images/bg-intro-desktop.png)
 }
 
 .main {
@@ -48,8 +49,44 @@ h1 {
     align-items: center;
 }
 
-.trial-button button {
+.trial-button {
+    background-color: var(--blue);
+    margin-bottom: 20px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
     width: 100%;
+}
+
+button {
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.claim {
+    width: 90%;
+    background-color: var(--green);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-transform: uppercase;
+}
+
+.form p {
+    font-size: 10px;
+    color: var(--grayBlue);
+}
+
+.form p span {
+    font-weight: 700;
+    color: var(--red);
+}
+
+.form-white {
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
