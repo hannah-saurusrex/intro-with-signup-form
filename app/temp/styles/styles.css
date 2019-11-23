@@ -1,2 +1,56 @@
+:root {
+  /* primary colors */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  /* accent colors */
+  --blue: hsl(248, 32%, 49%);
+  /* neutral colors */
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayBlue: hsl(246, 25%, 77%); }
+
 body {
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1440px;
+  padding-top: 15%;
+  width: 80%; }
+
+.main {
+  display: flex;
+  height: 100vh; }
+
+.info {
+  width: 50%;
+  display: block;
+  float: left;
+  justify-content: center;
+  align-content: center; }
+
+h1 {
+  font-size: 36px;
+  font-weight: 700; }
+
+.info p {
+  font-size: 16px; }
+
+.form {
+  width: 50%;
+  display: block;
+  float: left;
+  justify-content: center;
+  align-items: center; }
+
+.trial-button button {
+  width: 100%; }
+
+/* footer styles */
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
+@media only screen and (max-width: 375px) {
+  /* mobile styles based on style-guide doc */ }

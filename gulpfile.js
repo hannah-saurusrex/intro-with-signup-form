@@ -21,7 +21,7 @@ function watch() {
             baseDir: "app"
         }
     });
-    gulp.watch('./app/assets/styles/**/*.css', style);
+    gulp.watch('./app/assets/styles/*.css', style);
     gulp.watch('./app/*.html').on('change', browserSync.reload);
     gulp.watch('./app/assets/scripts/**/*.js').on('change', browserSync.reload);
 }
