@@ -13,30 +13,41 @@ body {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   max-width: 1440px;
-  padding-top: 15%;
+  padding-top: 10%;
   width: 80%;
-  background: url(/app/assets/images/bg-intro-desktop.png); }
+  background-color: var(--red); }
 
 .main {
   display: flex;
-  height: 100vh; }
-
-.info {
-  width: 50%;
-  display: block;
-  float: left;
+  height: auto;
   justify-content: center;
   align-content: center; }
 
+.info {
+  width: 50%;
+  max-width: 500px;
+  display: grid;
+  float: left;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  letter-spacing: .09rem;
+  padding-right: 20px; }
+
 h1 {
-  font-size: 36px;
-  font-weight: 700; }
+  font-size: 44px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  line-height: 3.25rem; }
 
 .info p {
-  font-size: 16px; }
+  font-size: 14px;
+  font-weight: 400; }
 
 .form {
   width: 50%;
+  max-width: 500px;
   display: block;
   float: left;
   justify-content: center;
@@ -58,28 +69,38 @@ button {
   border-radius: 8px; }
 
 .claim {
-  width: 90%;
+  width: 100%;
   background-color: var(--green);
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 10px; }
 
 .form p {
   font-size: 10px;
-  color: var(--grayBlue); }
+  color: var(--grayBlue);
+  text-align: center; }
 
 .form p span {
   font-weight: 700;
   color: var(--red); }
 
 .form-white {
-  background-color: aquamarine;
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 25px; }
+
+.form-styling {
+  width: 100%;
+  border: 1px solid var(--grayBlue);
+  border-radius: 5px;
+  height: 40px; }
 
 /* footer styles */
 .attribution {
   font-size: 11px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
 
 .attribution a {
   color: #3e52a3; }
