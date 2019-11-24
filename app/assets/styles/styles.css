@@ -19,6 +19,8 @@ body {
     background-color: var(--red);
     background-image: url("/app/assets/images/bg-intro-desktop.png");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main {
@@ -105,12 +107,19 @@ button {
     padding: 25px;
 }
 
-.form-styling {
+input[type=text] {
     width: 100%;
-    border: 1px solid var(--grayBlue);
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
     border-radius: 5px;
-    height: 40px;
-}
+    border: 1px solid var(--grayBlue);
+    outline: none;
+  }
+
+  input[type=text]:focus {
+    border: 1px solid var(--darkBlue);
+  }
 
 
 /* footer styles */
@@ -126,5 +135,16 @@ button {
 
 @media only screen and (max-width: 375px) {
     /* mobile styles based on style-guide doc */
+    .main {
+        display: inline;
+    }
 
+    .info .form {
+        float: none;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
 }
