@@ -27,20 +27,59 @@
       </div>
 
       <div class="form-white" method="POST" data-netlify="true">
-        <p>
-          <label><input type="text" name="firstName" placeholder="First Name"></label>
-        </p>
-        <p>
-          <label><input type="text" name="lastName" placeholder="Last Name"></label>
-        </p>
-        <p>
-          <label><input type="text" name="email" placeholder="Email Address"></label>
-        </p>
-        <p>
-          <label><input type="text" name="password" placeholder="Password"></label>
-        </p>
+        <div class="form-row">
+          <label><input type="text" name="firstName" placeholder="First Name" class="form-input" required></label>
+          
+          <div class="warning-icon">
+            <img src="assets/images/icon-error.svg" alt="warning-icon" />
+          </div>
+
+          <div class="warning-message">
+            First Name cannot be empty
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <label><input type="text" name="lastName" placeholder="Last Name" class="form-input" required></label>
+
+          <div class="warning-icon">
+            <img src="assets/images/icon-error.svg" alt="warning-icon" />
+          </div>
+
+          <div class="warning-message">
+            Last Name cannot be empty
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <label><input type="text" name="email" placeholder="Email Address" class="form-input" required></label>
+
+          <div class="warning-icon">
+            <img src="assets/images/icon-error.svg" alt="warning-icon" />
+          </div>
+
+          <div class="warning-message">
+            Looks like this is not an email
+          </div>
+
+        </div>
+
+        <div class="form-row">
+          <label><input type="text" name="password" placeholder="Password" class="form-input" required></label>
+
+          <div class="warning-icon">
+            <img src="assets/images/icon-error.svg" alt="warning-icon" />
+          </div>
+
+          <div class="warning-message">
+            Password cannot be empty
+          </div>
+
+        </div>
       
-      <button class="claim">Claim your free trial</button>
+      <button id="claim" class="claim">Claim your free trial</button>
       
       <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </div>

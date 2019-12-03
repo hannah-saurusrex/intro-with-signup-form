@@ -21,7 +21,7 @@ body {
     max-width: 1440px;
     padding-top: 10%;
     width: 80%;
-    background-image: url("/app/assets/images/bg-intro-desktop.png") no-repeat center fixed;
+    background: url("/app/assets/images/bg-intro-desktop.png") no-repeat center fixed;
     background-size: cover;
     background-color: var(--red);
 }
@@ -111,14 +111,20 @@ button {
     border-radius: 10px;
     box-shadow: 0 8px 2px 0 rgba(0, 0, 0, 0.19);
     padding: 25px;
+    position: relative;
+}
+
+.form-row {
+  position: relative;
+  margin-bottom: 18px;
 }
 
 input[type=text] {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
     width: 100%;
     padding: 12px 25px;
-    margin: 8px 0;
+    margin: 6px 0;
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid var(--grayBlue);
@@ -127,6 +133,35 @@ input[type=text] {
 
   input[type=text]:focus {
     border: 1px solid var(--darkBlue);
+  }
+
+  /* validation error styles */
+  .warning-icon {
+      display: none;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      align-items: center;
+  }
+
+  .warning-message {
+      display: none;
+      color: var(--red);
+      font-size: 12px;
+      text-align: right;
+      font-style: italic;
+  }
+
+  .form-input:invalid {
+      box-shadow: none;
+  }
+
+  .submitted:invalid + .warning-icon {
+      display: block;
+  }
+
+  .submitted:invalid ~ .warning-message {
+      display: block;
   }
 
 
@@ -143,6 +178,11 @@ input[type=text] {
 
 @media only screen and (min-width: 300px) and (max-width: 667px) {
     /* mobile styles based on style-guide doc */
+    body {
+        background: url("/app/assets/images/bg-intro-mobile.png");
+        background-color: var(--red);
+      }
+    
     .main {
         display: grid;
         grid-gap: 25px;
