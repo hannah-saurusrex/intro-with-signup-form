@@ -9,9 +9,6 @@
   --grayBlue: hsl(246, 25%, 77%); }
 
 html {
-  background-image: url("/app/assets/images/bg-intro-desktop.png") no-repeat center fixed;
-  background-size: cover;
-  background-color: var(--red);
   -moz-box-sizing: border-box;
   /* Firefox */
   -webkit-box-sizing: border-box;
@@ -23,7 +20,10 @@ body {
   font-family: 'Poppins', sans-serif;
   max-width: 1440px;
   padding-top: 10%;
-  width: 80%; }
+  width: 80%;
+  background-image: url("/app/assets/images/bg-intro-desktop.png") no-repeat center fixed;
+  background-size: cover;
+  background-color: var(--red); }
 
 .main {
   display: grid;
@@ -121,9 +121,23 @@ input[type=text]:focus {
   /* mobile styles based on style-guide doc */
   .main {
     display: grid;
+    grid-gap: 25px;
     grid-template-columns: 1fr;
-    grid-template-areas: "intro" "signup"; }
+    grid-template-areas: "intro" "signup";
+    margin-top: 50px; }
   .info {
-    grid-area: intro; }
+    grid-area: intro;
+    text-align: center;
+    padding: 0; }
+  h1 {
+    font-size: 30px;
+    line-height: 2.25rem; }
+  .info p {
+    font-size: 12px;
+    line-height: inherit; }
   .form {
-    grid-area: signup; } }
+    grid-area: signup; }
+  button {
+    line-height: 18px; }
+  .claim {
+    padding: 15px 10px; } }

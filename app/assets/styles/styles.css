@@ -10,9 +10,6 @@
 }
 
 html {
-    background-image: url("/app/assets/images/bg-intro-desktop.png") no-repeat center fixed;
-    background-size: cover;
-    background-color: var(--red);
     -moz-box-sizing: border-box; /* Firefox */
     -webkit-box-sizing: border-box; /* Safari */
 }
@@ -24,6 +21,9 @@ body {
     max-width: 1440px;
     padding-top: 10%;
     width: 80%;
+    background-image: url("/app/assets/images/bg-intro-desktop.png") no-repeat center fixed;
+    background-size: cover;
+    background-color: var(--red);
 }
 
 .main {
@@ -139,18 +139,40 @@ input[type=text] {
     /* mobile styles based on style-guide doc */
     .main {
         display: grid;
+        grid-gap: 25px;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "intro"
         "signup";
+        margin-top: 50px;
     }
 
     .info {
         grid-area: intro;
+        text-align: center;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 2.25rem;
+    }
+
+    .info p {
+        font-size: 12px;
+        line-height: inherit;
     }
 
     .form {
         grid-area: signup;
+    }
+
+    button {
+        line-height: 18px;
+    }
+
+    .claim {
+        padding: 15px 10px;
     }
 
 }
