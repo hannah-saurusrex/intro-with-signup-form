@@ -78,6 +78,7 @@ button {
     letter-spacing: .1rem;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .claim {
@@ -86,6 +87,11 @@ button {
     text-transform: uppercase;
     margin-top: 10px;;
     box-shadow: 0 4px 2px 0 hsl(154, 57%, 38%);
+}
+
+.claim:hover {
+    background-color: hsla(154, 50%, 58%, 0.6);
+    box-shadow: 0 4px 2px 0 hsla(154, 57%, 38%, 0.6);
 }
 
 .form p {

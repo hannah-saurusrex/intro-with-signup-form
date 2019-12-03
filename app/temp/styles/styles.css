@@ -69,7 +69,8 @@ button {
   font-weight: 400;
   letter-spacing: .1rem;
   border: none;
-  border-radius: 8px; }
+  border-radius: 8px;
+  cursor: pointer; }
 
 .claim {
   width: 100%;
@@ -77,6 +78,10 @@ button {
   text-transform: uppercase;
   margin-top: 10px;
   box-shadow: 0 4px 2px 0 #2a9868; }
+
+.claim:hover {
+  background-color: rgba(94, 201, 155, 0.6);
+  box-shadow: 0 4px 2px 0 rgba(42, 152, 104, 0.6); }
 
 .form p {
   font-size: 10px;
