@@ -4,6 +4,6 @@ window.onload = function() {
         document.querySelectorAll("input").forEach(item => {
             item.classList.add("submitted");
             item.removeAttribute("placeholder");
-        });
-    });
+        })
+    })
 }
