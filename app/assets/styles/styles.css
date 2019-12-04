@@ -157,6 +157,11 @@ input[type=text] {
       box-shadow: none;
   }
 
+  .submitted:invalid {
+    border: 2px solid var(--red);
+    color: var(--red);
+  }
+
   .submitted:invalid + .warning-icon {
       display: block;
   }
@@ -182,6 +187,7 @@ input[type=text] {
     body {
         background: url("/assets/images/bg-intro-mobile.png");
         background-color: var(--red);
+        background-size: auto;
       }
     
     .main {

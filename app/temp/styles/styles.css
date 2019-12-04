@@ -135,6 +135,10 @@ input[type=text]:focus {
 .form-input:invalid {
   box-shadow: none; }
 
+.submitted:invalid {
+  border: 2px solid var(--red);
+  color: var(--red); }
+
 .submitted:invalid + .warning-icon {
   display: block; }
 
@@ -154,7 +158,8 @@ input[type=text]:focus {
   /* mobile styles based on style-guide doc */
   body {
     background: url("/assets/images/bg-intro-mobile.png");
-    background-color: var(--red); }
+    background-color: var(--red);
+    background-size: auto; }
   .main {
     display: grid;
     grid-gap: 25px;
