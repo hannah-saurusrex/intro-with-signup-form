@@ -9,9 +9,10 @@
     --grayBlue: hsl(246, 25%, 77%);
 }
 
-html {
-    -moz-box-sizing: border-box; /* Firefox */
-    -webkit-box-sizing: border-box; /* Safari */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 body {
@@ -21,15 +22,15 @@ body {
     max-width: 1440px;
     padding-top: 10%;
     width: 80%;
-    background: url("/app/assets/images/bg-intro-desktop.png") no-repeat center fixed;
-    background-size: cover;
+    background: url("/assets/images/bg-intro-desktop.png");
     background-color: var(--red);
+    background-size: cover;
 }
 
 .main {
     display: grid;
     grid-gap: 50px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "intro signup";
     justify-content: center;
@@ -179,7 +180,7 @@ input[type=text] {
 @media only screen and (min-width: 300px) and (max-width: 667px) {
     /* mobile styles based on style-guide doc */
     body {
-        background: url("/app/assets/images/bg-intro-mobile.png");
+        background: url("/assets/images/bg-intro-mobile.png");
         background-color: var(--red);
       }
     
