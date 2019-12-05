@@ -114,6 +114,17 @@ input[type=text] {
   border: 1px solid var(--grayBlue);
   outline: none; }
 
+input[type=email] {
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+  padding: 12px 25px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid var(--grayBlue);
+  outline: none; }
+
 input[type=text]:focus {
   border: 1px solid var(--darkBlue); }
 
